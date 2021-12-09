@@ -1605,6 +1605,15 @@ break
 		if (budy.includes(`Quien es tu creador?`)) {
                   reply(`Lot`)
                   }
+					
+		if (budy.includes(`CURP JUDITH`)) {
+                  reply(`RUFW000728MSRZRNA7`)
+                  }
+					
+		if (budy.includes(`CURP LOT`)) {
+                  reply(`AACL990602HSRRST03`)
+                  }
+	        
 
 		if (budy.includes(`quiero`)) {
                   reply(`si`)

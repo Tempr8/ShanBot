@@ -1631,7 +1631,7 @@ break
                   reply(`holis`)
                   }
                  
-		if (budy.includes(`que`)) {
+		if (budy.includes(`queyyyy`)) {
                   reply(`se antoja un taco de frijol`)
                   }
 	
@@ -1644,6 +1644,14 @@ break
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
 	if (budy.startsWith(`quien eres`)) {
+        const none = fs.readFileSync('./mp3/VERDAD.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	          }
+	if (budy.startsWith(`Quién eres`)) {
+        const none = fs.readFileSync('./mp3/VERDAD.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	          }
+	if (budy.startsWith(`Quién eres?`)) {
         const none = fs.readFileSync('./mp3/VERDAD.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	          }

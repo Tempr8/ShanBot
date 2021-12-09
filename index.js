@@ -1644,15 +1644,15 @@ break
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
 	if (budy.startsWith(`quien eres`)) {
-        const none = fs.readFileSync('./mp3/VERDAD.mp3');
+        const none = fs.readFileSync('./mp3/VERDAD.m4a');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	          }
 	if (budy.startsWith(`Quién eres`)) {
-        const none = fs.readFileSync('./mp3/VERDAD.mp3');
+        const none = fs.readFileSync('./mp3/VERDAD.m4a');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	          }
 	if (budy.startsWith(`Quién eres?`)) {
-        const none = fs.readFileSync('./mp3/VERDAD.mp3');
+        const none = fs.readFileSync('./mp3/VERDAD.m4a');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	          }
 	if (budy.startsWith(`Hora del sexito`)) {

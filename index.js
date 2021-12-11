@@ -57,19 +57,19 @@ const _level = JSON.parse(fs.readFileSync('./database/json/level.json'))
 /******FIN DE ENTRADA JSON******/
 
 /******INICIO DE LA ENTRADA DEL MENÚ******/
-const { help } = require('./src/help')
+//const { help } = require('./src/help')
 const { logomaker } = require('./database/menu/logomaker')
 const { toinmenu } = require('./src/toinmenu')
 const { menuadmin } = require('./src/menuadmin')
-const { nsfwmenu } = require('./src/nsfwmenu')
+//const { nsfwmenu } = require('./src/nsfwmenu')
 const { desmenu } = require('./src/desmenu')
-const { version } = require('./src/version')
+//const { version } = require('./src/version')
 const { juegos } = require('./src/juegos')
-const { shantera } = require('./src/shantera')
+//const { shantera } = require('./src/shantera')
 const { antimenu } = require('./src/antimenu')
 const { welmenu } = require('./src/welmenu')
 const { banmenu } = require('./src/banmenu')
-const { otak } = require('./src/otak')
+//const { otak } = require('./src/otak')
 const { levelmenu } = require('./src/levelmenu')
 /******FIN DE ENTRADA DEL MENÚ******/
 

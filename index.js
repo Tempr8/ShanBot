@@ -179,7 +179,7 @@ const getLevelingXp = (userId) => {
 //LEVEL FIN
 	
 function addMetadata(packname, author) {	
-	if (!packname) packname = 'ShanBot'; if (!author) author = 'shanduy';	
+	if (!packname) packname = 'YuyinBot'; if (!author) author = 'Yuyin';	
 	author = author.replace(/[^a-zA-Z0-9]/g, '');	
 	let name = `${author}_${packname}`
 	if (fs.existsSync(`./${name}.exif`)) return `./${name}.exif`
@@ -261,7 +261,7 @@ async function starts() {
                           client.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Bueno, se fue @${num.split('@')[0]} 👋\n\nA chingar a su madre`
+				teks = `Bueno, se fue @${num.split('@')[0]} 👋\n\n adios`
 				client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -300,7 +300,7 @@ async function starts() {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: 'Perame \n\n❗No andes mamando con tu spam👏❗\n\n_*YuyinBot*_',
+				wait: 'Perame \n\n❗No sigas con tu spam👏❗\n\n_*YuyinBot*_',
 				success: '✔️ Listo ✔️',
                                 levelon: '❬ ✅ ❭ *Level activado*',
 				leveloff: ' ❬ ✅ ❭  *Level desactivado*',
@@ -323,13 +323,13 @@ async function starts() {
                                         pegatina: 'perame estoy haciendo tu sticker \n\n*acuerdate los stickersgif son de 6 segundos*\n\n_*YuyinBot*_',
 					attp: 'aguanta estoy haciendo tu texto a sticker \n\n*Aveces me da flojera y tardo un ratito *\n\n_*YuyinBot*_',
 					imgs: 'Voy \n\n*Maquilando tu Sticker a Imagen 🔄*\n\n_*Cortesia del papirrin Yuyin*_',
-					mpcancion: 'Perame joto \n\n*Convirtiendo de MP4 a MP3 🔄*\n\n_*Yuyin*_',
+					mpcancion: 'Perame  \n\n*Convirtiendo de MP4 a MP3 🔄*\n\n_*Yuyin*_',
 					mpa: 'ya voy pss 🥴\n\n*Ando descargando tu cancion 🔄*\n\nDame un momento, por favor\n\n_*Papirrin yuyin*_',
                                         mpv: 'Calma \n\n*Estoy descargando tu video 🔄*\n\nPerame, por favor\n\n_*yoyoymo*_',
 					insta: 'oc \n\n*Estoy descargando tu post 🔄*\n\nAguarde un momento\n\n_*yuyin*_',
-					musica: 'Aguanta, ando buscando tu cochinada \n\n*si no me pones la cancion o el link de youtube bien, te voy a pasar lo que se me inche el guebo*\n\n*Si el comando *play no funciona utiliza el comando *play2*\n\nSi no envio tu musica pues te chingaste\n\n_*Yuyin*_',
-					musica2: 'Aguanta, ando buscando tu cochinada \n\n*si no me pones la cancion o el link de youtube bien, te voy a pasar lo que se me inche el guebo*\n\n*Si el comando *play2 no funciona utiliza el comando *play*\n\nSi no envio tu musica pues te chingaste\n\n_*Yuyin*_',
-					daftarB: `「Atención, inspector de papulinces」\n\nNo te conozco xd \n\nPara poder conocerte escribe el siguente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar Yuyin`,
+					musica: 'Aguanta, ando buscando tu miusik \n\n*si no me pones la cancion o el link de youtube bien, te voy a pasar lo que quiera*\n\n*Si el comando *play no funciona utiliza el comando *play2*\n\nSi no envio tu musica pues nimodos\n\n_*Yuyin*_',
+					musica2: 'Aguanta, ando buscando tu son \n\n*si no me pones la cancion o el link de youtube bien, te voy a pasar lo que quiera*\n\n*Si el comando *play2 no funciona utiliza el comando *play*\n\nSi no envio tu musica pues nimodos\n\n_*Yuyin*_',
+					daftarB: `「Atención」\n\nNo te conozco xd \n\nPara poder conocerte escribe el siguente comando\n\nComando: ${prefix}daftar Nombre\nEjemplo: ${prefix}daftar Yuyin`,
 				}
 			}
     			const apakah = ['Si','No']
@@ -1373,7 +1373,7 @@ break
 				
 				
 	        case 'play':   
-	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play Soy negro los binguers pilinguers')
+	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play libre soy')
 		if (!isUser) return reply(mess.only.daftarB)
                 reply(mess.only.musica)
                 play = body.slice(5)
@@ -1387,13 +1387,13 @@ break
                 break
 		
 		case 'play2':   
-	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play2 soy joto')
+	        if (args.length < 1) return reply('Donde esta el nombre de la canción?\n\nEjemplo: *play2 run rabbit run')
 		if (!isUser) return reply(mess.only.daftarB)
 	        reply(mess.only.musica2)
                 play = body.slice(5)
                 anu = await fetchJson(`https://api.zeks.me/api/ytplaymp3?q=${play}&apikey=23shanduy`)
                 if (anu.error) return reply(anu.error)
-                infomp3 = `*⌜localizado papu ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ENVIANDO SU ARCHIVO MP3 ⚠*\n\n_*Servicio proveido por yuyin pin pin *_`
+                infomp3 = `*⌜localizado  ✅⌟*\n◉ *Título:* ${anu.result.title}\n◉ *Fuente:* ${anu.result.source}\n◉ *Tamaño:* ${anu.result.size}\n\n*ENVIANDO SU ARCHIVO MP3 ⚠*\n\n_*Servicio proveido por yuyin pin pin *_`
                 buffer = await getBuffer(anu.result.thumbnail)
                 lagu = await getBuffer(anu.result.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})

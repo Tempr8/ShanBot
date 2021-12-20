@@ -1623,8 +1623,12 @@ break
                   reply(`De nada wey`)
                   }
 
-		if (budy.includes(`Bien gracias y tu?`)) {
-                  reply(`Opa yazmin te extrañe :(`)
+		if (budy.includes(`Muéstrate`)) {
+                 delay(3000) reply(`Hola`)
+                  }
+					
+		if (budy.includes(`Muéstrate`)) {
+                 delay(4000) reply(`Soy Yuyin`)
                   }
 					
 		if (budy.includes(`Hola`)) {

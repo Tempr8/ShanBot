@@ -1631,11 +1631,34 @@ break
                   reply(`Soy Yuyin`)
                   }
 					
+		if (budy.includes(`Muestrate`)) {
+                  reply(`Hola`)
+                  }
+					
+		if (budy.includes(`Muestrate`)) {
+                  reply(`Soy Yuyin`)
+                  }
+		if (budy.includes(`muéstrate`)) {
+                  reply(`Hola`)
+                  }
+					
+		if (budy.includes(`muéstrate`)) {
+                  reply(`Soy Yuyin`)
+                  }		
+					
+		if (budy.includes(`muestrate`)) {
+                  reply(`Hola`)
+                  }
+					
+		if (budy.includes(`muestrate`)) {
+                  reply(`Soy Yuyin`)
+                  }
+					
 		if (budy.includes(`Hola`)) {
                   reply(`holis`)
                   }
                  
-		if (budy.includes(`queyyyy`)) {
+		if (budy.includes(`.`)) {
                   reply(`se antoja un taco de frijol`)
                   }
 	

@@ -1624,11 +1624,11 @@ break
                   }
 
 		if (budy.includes(`Muéstrate`)) {
-                 delay(3000) reply(`Hola`)
+                  reply(`Hola`)
                   }
 					
 		if (budy.includes(`Muéstrate`)) {
-                 delay(4000) reply(`Soy Yuyin`)
+                  reply(`Soy Yuyin`)
                   }
 					
 		if (budy.includes(`Hola`)) {

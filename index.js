@@ -1652,6 +1652,18 @@ break
         const none = fs.readFileSync('./mp3/CARA.jpg');
 		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
 	          }
+	if (budy.startsWith(`Muestrate`)) {
+        const none = fs.readFileSync('./mp3/CARA.jpg');
+		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
+	          }
+	if (budy.startsWith(`muéstrate`)) {
+        const none = fs.readFileSync('./mp3/CARA.jpg');
+		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
+	          }
+	if (budy.startsWith(`muestrate`)) {
+        const none = fs.readFileSync('./mp3/CARA.jpg');
+		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
+	          }
 	if (budy.startsWith(`Quién eres`)) {
         const none = fs.readFileSync('./mp3/VERDAD.m4a');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})

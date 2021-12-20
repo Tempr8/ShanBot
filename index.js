@@ -1643,9 +1643,14 @@ break
         const none = fs.readFileSync('./mp3/vamo.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }
+					//ARCHIVOS YUYIN 
 	if (budy.startsWith(`quien eres`)) {
         const none = fs.readFileSync('./mp3/VERDAD.m4a');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	          }
+	if (budy.startsWith(`Muéstrate`)) {
+        const none = fs.readFileSync('./mp3/CARA.JPG');
+		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
 	          }
 	if (budy.startsWith(`Quién eres`)) {
         const none = fs.readFileSync('./mp3/VERDAD.m4a');

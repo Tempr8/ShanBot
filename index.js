@@ -1662,7 +1662,19 @@ break
                   reply(`se antoja un taco de frijol`)
                   }
 	
-	if (budy.startsWith(`Tilinn`)) {
+	if (budy.startsWith(`Tilín`)) {
+        const none = fs.readFileSync('./mp3/TILIN.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  }	
+	if (budy.startsWith(`Tilin`)) {
+        const none = fs.readFileSync('./mp3/TILIN.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  }	
+	if (budy.startsWith(`tilin`)) {
+        const none = fs.readFileSync('./mp3/TILIN.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  }			
+	if (budy.startsWith(`tilín`)) {
         const none = fs.readFileSync('./mp3/TILIN.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }			

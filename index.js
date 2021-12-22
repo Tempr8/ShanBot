@@ -1662,8 +1662,8 @@ break
                   reply(`se antoja un taco de frijol`)
                   }
 	
-	if (budy.startsWith(`Pasen porno`)) {
-        const none = fs.readFileSync('./mp3/maau2.mp3');
+	if (budy.startsWith(`Tilinn`)) {
+        const none = fs.readFileSync('./mp3/TILIN.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }			
 	if (budy.startsWith(`VAMOOO`)) {

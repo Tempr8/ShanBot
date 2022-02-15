@@ -1109,13 +1109,8 @@ client.groupRemove(from, [entah])
 break
 					//PROHIBICIÓN DE EMOGIS 
 
-case '🤣':
-case '😂':
-					
-if (!isBotGroupAdmins) return reply(mess.only.group)
-if (!isGroupAdmins) return reply(mess.only.group)
-if (!isGroup) return reply(mess.only.group)
-if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage ) return reply('ADIOS XD')
+				
+if (budy.includes(`😂`) || mek.message.extendedTextMessage ) return reply('ADIOS XD')
 if (mek.message.extendedTextMessage.contextInfo.participant) {
 entah = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (entah.length > 1) {

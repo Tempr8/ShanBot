@@ -1602,15 +1602,15 @@ break
                   }
 					
 		if (budy.includes(`Yuyin`)) {
-                  reply(`que quieres`)
+                  reply(`Que pasó primo`)
                   }	
 					
 		if (budy.includes(`Quien es tu creador?`)) {
                   reply(`Lot`)
                   }
 					
-		if (budy.includes(`CURP JUDITH`)) {
-                  reply(`RUFW000728MSRZRNA7`)
+		if (budy.includes(`😂`) (`🤣`)) {
+                  reply(`NO EMOGIS`)
                   }
 					
 		if (budy.includes(`CURP LOT`)) {

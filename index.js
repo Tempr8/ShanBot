@@ -1632,8 +1632,12 @@ break
                   reply(`Lot`)
                   }
 					
-		if (budy.includes(`😂`) (`🤣`)) {
-                  reply(`NO EMOGIS`)
+		if (budy.includes(`va`) {
+                  reply(`va`)
+                  }
+		  
+		 if (budy.includes(`Va`) {
+                  reply(`va`)
                   }
 					
 		if (budy.includes(`CURP LOT`)) {

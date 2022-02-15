@@ -1084,7 +1084,9 @@ client.sendMessage(from, options, text, { quoted: mek } )
 break
                                       
 case 'kick':
-case 'pafuera':
+case 'pafuera':	
+case 'Borra a':	
+case 'borra a':	
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isGroup) return reply(mess.only.group)
@@ -1105,6 +1107,32 @@ entah = ridwan.message.extendedTextMessage.contextInfo.participant
 client.groupRemove(from, [entah])
 }
 break
+					//PROHIBICIÓN DE EMOGIS 
+
+case '🤣':
+case '😂':
+					
+if (!isBotGroupAdmins) return reply(mess.only.group)
+if (!isGroupAdmins) return reply(mess.only.group)
+if (!isGroup) return reply(mess.only.group)
+if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage ) return reply('ADIOS XD')
+if (mek.message.extendedTextMessage.contextInfo.participant) {
+entah = mek.message.extendedTextMessage.contextInfo.mentionedJid
+if (entah.length > 1) {
+var mems_ids = []
+for (let ids of entah) {
+mems_ids.push(ids)
+}
+client.groupRemove(from, mems_ids)
+} else {
+client.groupRemove(from, [entah[0]])
+}
+} else {
+entah = ridwan.message.extendedTextMessage.contextInfo.participant
+client.groupRemove(from, [entah])
+}
+break
+//FIN DE PROHIBICIÓN DE EMOGIS 
 
 case 'demote':
 if (!isGroup) return reply(mess.only.group)

@@ -1640,6 +1640,24 @@ break
                   reply(`Lot`)
                   }
 					
+		if (budy.includes(`Quien te creó?`)) {
+                  reply(`Lot`)
+                  }
+					
+		if (budy.includes(`Quien te creo?`)) {
+                  reply(`Lot`)
+                  }	
+		if (budy.includes(`Quien te creó`)) {
+                  reply(`Lot`)
+			
+                  }
+		if (budy.includes(`Quien te creo`)) {
+                  reply(`Lot`)
+                  }
+		
+		if (budy.includes(`Quien te creó?`)) {
+                  reply(`Lot`)
+                  }
 		if (budy.includes(`va`)) {
                   reply(`va`)
                   }
@@ -1699,31 +1717,6 @@ break
 		if (budy.includes(`.`)) {
                   reply(`se antoja un taco de frijol`)
                   }
-	
-	if (budy.startsWith(`Tilín`)) {
-        const none = fs.readFileSync('./mp3/TILIN.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }	
-					
-	if (budy.startsWith(`Diablo`)) {
-        const none = fs.readFileSync('./mp3/Diablo.jpg');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
-                  }	
-					
-	if (budy.startsWith(`diablo`)) {
-        const none = fs.readFileSync('./mp3/Diablo.jpg');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
-                  }
-			
-	if (budy.startsWith(`Diablo`)) {
-        const none = fs.readFileSync('./mp3/DIABLOO.mp3');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp3', ptt:true})
-                  }	
-					
-	if (budy.startsWith(`diablo`)) {
-        const none = fs.readFileSync('./mp3/DIABLOO');
-		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp3', ptt:true})
-                  }
 				
 					
 	if (budy.startsWith(`Tilin`)) {
@@ -1733,11 +1726,30 @@ break
 	if (budy.startsWith(`tilin`)) {
         const none = fs.readFileSync('./mp3/TILIN.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }			
-	if (budy.startsWith(`tilín`)) {
-        const none = fs.readFileSync('./mp3/TILIN.mp3');
+                  }	
+					
+	if (budy.startsWith(`Modo diablo`)) {
+        const none = fs.readFileSync('./mp3/Diablo.jpg');
+		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
+	          }
+					
+	if (budy.startsWith(`modo diablo`)) {
+        const none = fs.readFileSync('./mp3/Diablo.jpg');
+		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
+	          }
+				
+				
+					
+	if (budy.startsWith(`Modo diablo`)) {
+        const none = fs.readFileSync('./mp3/DIABLOO.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-                  }			
+                  }	
+					
+	if (budy.startsWith(`modo diablo`)) {
+        const none = fs.readFileSync('./mp3/DIABLOO.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  }	
+					
 	if (budy.startsWith(`VAMOOO`)) {
         const none = fs.readFileSync('./mp3/vamo.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -1763,6 +1775,8 @@ break
         const none = fs.readFileSync('./mp3/CARA.jpg');
 		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
 	          }
+						
+					
 	if (budy.startsWith(`Quién eres`)) {
         const none = fs.readFileSync('./mp3/VERDAD.m4a');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})

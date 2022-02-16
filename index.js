@@ -1109,9 +1109,14 @@ client.groupRemove(from, [entah])
 break
 					//PROHIBICIÓN DE EMOGIS 
 
-				
-if (budy.includes(`😂`) || mek.message.extendedTextMessage ) return reply('ADIOS XD')
-if (mek.message.extendedTextMessage.contextInfo.participant) {
+		
+case 'Modo castroso':	
+case 'modo castroso':	
+if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+if (!isGroupAdmins) return reply(mess.only.admin)
+if (!isGroup) return reply(mess.only.group)
+if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return reply('ANIMO PLEBADAAA n\שיהיה לך סוף רע לגופך, שאלוהים יתן לך לראות את עצמך בידיים של התליין ולהיגרר כמו נחשים, שתרעב, שכלבים יאכלו אותך, שעורבים מרושעים יעקרו לך את העיניים, ישוע המשיח ישלח לך גרדת כלבים במשך זמן רב, שאם אתה נשוי, אשתך בוגדת בך, שהעיניים הקטנות שלי רואות אותך תלוי על הגרדום ושאני זה שאמשוך אותך ברגליך, ושהשטנים לוקחים אותך גוף ונפש לעזאזל. .  ')
+if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
 entah = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (entah.length > 1) {
 var mems_ids = []
@@ -1127,6 +1132,9 @@ entah = ridwan.message.extendedTextMessage.contextInfo.participant
 client.groupRemove(from, [entah])
 }
 break
+
+					
+					
 //FIN DE PROHIBICIÓN DE EMOGIS 
 
 case 'demote':
@@ -1696,6 +1704,17 @@ break
         const none = fs.readFileSync('./mp3/TILIN.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }	
+					
+	if (budy.startsWith(`Modo castroso`)) {
+        const none = fs.readFileSync('./mp3/Diablo.jpg');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
+                  }	
+					
+	if (budy.startsWith(`modo castroso`)) {
+        const none = fs.readFileSync('./mp3/Diablo.jpg');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
+                  }
+					
 	if (budy.startsWith(`Tilin`)) {
         const none = fs.readFileSync('./mp3/TILIN.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})

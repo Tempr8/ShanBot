@@ -1085,8 +1085,8 @@ break
                                       
 case 'kick':
 case 'pafuera':	
-case 'Borra a':	
-case 'borra a':	
+case 'Borra':	
+case 'borra':	
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isGroup) return reply(mess.only.group)
@@ -1705,22 +1705,22 @@ break
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }	
 					
-	if (budy.startsWith(`Modo diablo`)) {
+	if (budy.startsWith(`Diablo`)) {
         const none = fs.readFileSync('./mp3/Diablo.jpg');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
                   }	
 					
-	if (budy.startsWith(`modo diablo`)) {
+	if (budy.startsWith(`diablo`)) {
         const none = fs.readFileSync('./mp3/Diablo.jpg');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
                   }
 			
-	if (budy.startsWith(`Modo diablo`)) {
+	if (budy.startsWith(`Diablo`)) {
         const none = fs.readFileSync('./mp3/DIABLOO.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp3', ptt:true})
                   }	
 					
-	if (budy.startsWith(`modo diablo`)) {
+	if (budy.startsWith(`diablo`)) {
         const none = fs.readFileSync('./mp3/DIABLOO');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp3', ptt:true})
                   }

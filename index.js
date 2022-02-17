@@ -1723,6 +1723,14 @@ break
         const none = fs.readFileSync('./mp3/TILIN.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }	
+					
+					
+	if (budy.startsWith(`150`)) {
+        const none = fs.readFileSync('./mp3/150.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  }
+					
+					
 	if (budy.startsWith(`tilin`)) {
         const none = fs.readFileSync('./mp3/TILIN.mp3');
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})

@@ -1724,6 +1724,15 @@ break
 		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
                   }	
 					
+			if (budy.startsWith(`Triste`)) {
+        const none = fs.readFileSync('./mp3/triste.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  }	
+					
+		if (budy.startsWith(`triste`)) {
+        const none = fs.readFileSync('./mp3/triste.mp3');
+		client.sendMessage(from, none, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+                  }
 					
 	if (budy.startsWith(`150`)) {
         const none = fs.readFileSync('./mp3/150.mp3');

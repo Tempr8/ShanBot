@@ -1722,6 +1722,11 @@ break
                   reply(`Soy Yuyin`)
                   }
 					
+					if (budy.includes(`mikiwiki`)) {
+                  reply(`Anexo muchacha mikiwiki pero ya está apartada porque es la novia de guillermo jaja
+		  pero si igual le vendo dando dos metidas de verga `)
+                  }
+					
 		if (budy.includes(`Hola`)) {
                   reply(`holis`)
                   }
@@ -1804,7 +1809,14 @@ break
         const none = fs.readFileSync('./mp3/CARA.jpg');
 		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
 	          }
-						
+			
+					////DINORAAA
+					if (budy.startsWith(`mikiwiki`)) {
+        const none = fs.readFileSync('./mp3/DINORA.jpg');
+		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
+	          }
+					
+					
 					
 	if (budy.startsWith(`Quién eres`)) {
         const none = fs.readFileSync('./mp3/VERDAD.m4a');

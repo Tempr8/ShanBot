@@ -1658,6 +1658,18 @@ break
 		if (budy.includes(`Quien te creó?`)) {
                   reply(`Lot`)
                   }
+					
+		if (budy.includes(`vamos`)) {
+                  reply(`hay que ir por unas muchachas mikiwiki apoco no pa?`)
+                  }
+					
+				if (budy.includes(`Vamos`)) {
+                  reply(`hay que ir por unas muchachas mikiwiki apoco no pa?`)
+                  }
+					
+					if (budy.includes(`VAMOS`)) {
+                  reply(`hay que ir por unas muchachas mikiwiki apoco no pa?`)
+                  }
 		if (budy.includes(`va`)) {
                   reply(`va`)
                   }

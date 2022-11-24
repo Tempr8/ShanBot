@@ -1658,7 +1658,7 @@ break
 		if (budy.includes(`Quien te creó?`)) {
                   reply(`Lot`)
                   }
-					
+			///////////////////////////////////////////////////////////////////////////////////////////////		
 		if (budy.includes(`vamos`)) {
                   reply(`hay que ir por unas muchachas mikiwiki apoco no pa?`)
                   }
@@ -1811,10 +1811,6 @@ break
 	          }
 			
 					////DINORAAA
-					if (budy.startsWith(`mikiwiki`)) {
-        const none = fs.readFileSync('./mp3/DINORA.jpg');
-		client.sendMessage(from, none, MessageType.image, {quoted: mek, mimetype: 'image/jpeg', ptt:true})
-	          }
 					
 					
 					
